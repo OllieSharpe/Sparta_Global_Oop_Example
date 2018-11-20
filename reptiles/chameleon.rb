@@ -1,3 +1,4 @@
+require_relative '../Animal'
 require_relative '../animalTypes/reptiles'
 
 class Chameleon < Animal
@@ -15,4 +16,17 @@ class Chameleon < Animal
     Quadraped.legs
   end
 
+  def speak
+    puts "I don't think I do"
+  end
+
+  def temperature
+    CommonTraits.body_temperature
+  end
+
 end
+
+steve = Chameleon.new
+
+steve.camoflauge
+steve.temperature
