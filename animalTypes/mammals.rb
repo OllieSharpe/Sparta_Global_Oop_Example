@@ -13,7 +13,7 @@ module Mammals
   end
 
   class Biped < CommonTraits
-    def legs
+    def self.legs
       puts "I have two legs"
     end
   end
